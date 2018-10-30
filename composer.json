@@ -1,11 +1,11 @@
 {
-    "name": "MENA-Software/reactphp-slim",
+    "name": "mbarquin/reactphp-slim",
     "description": "Slim Request and Response extended to allow reactPHP serve a Slim framework instance",
     "license" : "MIT",
     "require": {
         "php": "^7.0",
-        "react/http": "0.8.*",
-        "slim/slim": "^3.11"
+        "react/http": "0.3.*",
+        "slim/slim": "^3.1"
     },
     "config": {
         "vendor-dir": "src/vendor"
