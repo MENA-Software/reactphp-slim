@@ -21,6 +21,7 @@ namespace mbarquin\reactSlim\Response;
 
 use React\Http\Response as ReactResponse;
 use Slim\Http\Response as SlimPHPResponse;
+use Psr\Http\Message\ResponseInterface as PsrHttpResponse;
 
 /**
  * Response adapter class
@@ -39,7 +40,7 @@ class SlimResponse implements ResponseInterface
      * @return void
      */
     static function setReactResponse(
-        ReactResponse $reactResp,
+        PsrHttpResponse $reactResp,
         SlimPHPResponse $slimResponse,
         bool $endRequest = false
     ) {

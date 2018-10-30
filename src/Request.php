@@ -56,7 +56,7 @@ class Request extends SlimPHPRequest
             $host[0],
             (int) $host[1],
             $request->getPath(),
-            $request->getQuery()
+            http_build_query($request->getQuery())
         );
 
         $cookies = [];
