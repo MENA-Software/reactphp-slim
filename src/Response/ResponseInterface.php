@@ -32,14 +32,14 @@ interface ResponseInterface
      * object and finishes the communication
      *
      * @param ReactResponse    $reactResp    ReactPHP native response object
-     * @param SlimPHPResponse  $slimResponse SlimPHP native response object
+     * @param PsrHttpResponse  $slimResponse SlimPHP native response object
      * @param boolean          $endRequest   If true, response flush will be finished
      *
      * @return void
      */
     static public function setReactResponse(
-        PsrHttpResponse $reactResp,
-        SlimPHPResponse $slimResponse,
+        ReactResponse $reactResp,
+        PsrHttpResponse $slimResponse,
         bool $endRequest = false
     );
 
